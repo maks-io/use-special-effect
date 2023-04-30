@@ -1,0 +1,51 @@
+{
+  "name": "use-special-effect",
+  "version": "0.0.1",
+  "description": "Special version of React's useEffect hook, which allows (1) defining which dependency changes should trigger the effect + (2) accessing both old + new values during effect run",
+  "main": "build/index.js",
+  "types": "build/index.d.ts",
+  "scripts": {
+    "clear-build-folder": "rm -rf ./build",
+    "transpile": "tsc",
+    "fix-paths": "tsc-alias",
+    "build": "yarn clear-build-folder && yarn transpile && yarn fix-paths",
+    "dev": "yarn nodemon",
+    "test": "jest"
+  },
+  "keywords": [
+    "react",
+    "useEffect",
+    "hooks",
+    "hook",
+    "dependency array",
+    "conditional",
+    "previous value"
+  ],
+  "files": [
+    "build"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maks-io/use-special-effect.git"
+  },
+  "author": "Markus Kurzmann <markus@kurzmann.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maks-io/use-special-effect/issues"
+  },
+  "homepage": "https://github.com/maks-io/use-special-effect#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jest": "^29.5.1",
+    "@types/node": "^18.15.10",
+    "nodemon": "^2.0.22",
+    "prettier": "^2.8.7",
+    "react": "^18.2.0",
+    "tsc": "^2.0.4",
+    "tsc-alias": "^1.8.4",
+    "typescript": "^5.0.2"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0"
+  }
+}
